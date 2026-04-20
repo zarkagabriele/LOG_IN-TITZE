@@ -8,6 +8,12 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 def home():
-    # Restituisce direttamente il file HTML
     return FileResponse('static/index.html')
 
+@app.get("/login")
+def controlla(username: str, password: str):
+    if username == "admin" and password == "xxx123":
+        risposta = {"messaggio": "le credenziali sono corrette"}
+    else:
+        risposta = {"messaggio": "le credenziali sono sbagliate"}
+    return (risposta)

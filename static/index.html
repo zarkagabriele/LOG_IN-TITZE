@@ -2,17 +2,20 @@
 <html>
 
     <head>
-        <title> PAGINA WEB </title>
+        <title>PAGINA WEB</title>
     </head>
 
     <body>
-        <input type = "text" id = "username"> <br>
-        <input type = "password" id = "password"> <br>
-        <button id = "btn_registrati" => Clicca qui per effetuare il log in </button>
-        <script> src = "/static/script.js" </script>
-        <p> id = "risultato" </p>
+        <input type="text" id="username"><br>
+        <input type="password" id="password"><br>
+
+        <button id="btn_registrati" onclick="controllaCredenziali()">
+        Clicca qui per effettuare il log in
+        </button>
+
+        <script src="/static/script.js"></script>
+
+        <p id="risultato"></p>
     </body>
-
-
 
 </html>
