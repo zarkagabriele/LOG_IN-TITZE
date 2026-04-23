@@ -15,6 +15,6 @@ def home():
 @app.get("/login")
 def controlla(username: str, password: str):
     if username == "admin" and password == "xxx123":
-        return {"messaggio": "le credenziali sono corrette"}
+        return {"messaggio": "1. le credenziali sono corrette"}
 
-    return {"messaggio": "le credenziali sono sbagliate"}
+    return {"messaggio": "0. le credenziali sono sbagliate"}
